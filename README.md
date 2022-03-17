@@ -9,7 +9,7 @@
 ## LANGUAGES AND TOOLS:
 
   <img align="center" alt="Kauan-Java" height="45" width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain-wordmark.svg">
-  <img align="center" alt="Kauan-Android" height="44" width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original-wordmark.svg">
+  <img align="center" alt="Kauan-Android" height="44" width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain-wordmark.svg">
   <img align="center" alt="Kauan-C" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg">
   <img align="center" alt="Kauan-HTML" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="Kauan-CSS" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
