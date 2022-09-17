@@ -8,7 +8,7 @@
   
 ## LANGUAGES AND TOOLS:
 
-  [![My Skills](https://skills.thijs.gg/icons?i=html,css,javascript,java,styledcomponents,react,python,photoshop&theme=light)](https://skills.thijs.gg)
+  [![My Skills](https://skills.thijs.gg/icons?i=react,html,css,javascript,java,styledcomponents,arduino,matlab,python,canva,photoshop&theme=light)](https://skills.thijs.gg)
   
    <div style="display: inline_block"><br>
 </div>
