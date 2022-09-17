@@ -1,4 +1,4 @@
-## ENGENHARIA DE SOFTWARE NA UNB && DEV FULL STACK NA DRIVEN!
+## ESTUDANTE DE ENGENHARIA DE SOFTWARE NA UNB && DEV FULL STACK NA DRIVEN!
 <div align="center">
   <a href="https://github.com/kauaneiras">
   <img height="150em" src="https://github-readme-stats.vercel.app/api?username=kauaneiras&show_icons=true&theme=merko&include_all_commits=true&count_private=true"/>
