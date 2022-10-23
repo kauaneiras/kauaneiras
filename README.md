@@ -1,4 +1,5 @@
 ## OPA! BEM VINDO AO MEU PERFIL
+![visitantes](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=edilbertocantuaria.edilbertocantuaria&color=202020&lcolor=46ceec)
 <div align="center">
   <a href="https://github.com/kauaneiras">
   <img height="150em" src="https://github-readme-stats.vercel.app/api?username=kauaneiras&show_icons=true&theme=merko&include_all_commits=true&count_private=true"/>
