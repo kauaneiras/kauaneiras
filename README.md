@@ -29,5 +29,5 @@
       src="https://cdn-icons-png.flaticon.com/512/174/174857.png" target="_blank"></a>
   <div style="display: inline_block"><br>
     
-    ![](./profile-3d-contrib/profile-night-rainbow.svg)
+   
     
