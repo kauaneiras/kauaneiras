@@ -26,6 +26,8 @@
   <a href="https://www.linkedin.com/in/kauan-de-torres-eiras-9a9563171/" target="_blank"><img height="40" width="40" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" target="_blank"></a> 
   <div style="display: inline_block"><br>
  
-  ![Snake animation](https://github.com/rafaballerini/rafaballerini/blob/output/github-contribution-grid-snake.svg)
- 
+* [LGTM collections](https://yoshi389111.github.io/yoshi389111/lgtm.html)
+
+![](./profile-3d-contrib/profile-green-animate.svg)
+    
 </div>
