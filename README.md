@@ -1,18 +1,10 @@
 ## BEM VINDO AO MEU PERFIL!
 
-- 📚 Estudante de Engenharia Eletrônica na Universidade de Brasília
-- 💡 Estudando Desenvolvimento Web na Driven
-- 😊 Pronomes: ele/dele 
+- :octocat: Estudante de Engenharia Eletrônica na Universidade de Brasília
+- :octocat: Estudando Desenvolvimento Web na Driven
+- :octocat: Pronomes: ele/dele 
 
 ##
-<div style="align-items: center;">
-  <a href="https://github.com/kauaneiras">
-    <img height="150em"
-      src="https://github-readme-stats.vercel.app/api?username=kauaneiras&show_icons=true&theme=merko&include_all_commits=true&count_private=true" />
-    <img height="150em"
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=kauaneiras&layout=compact&langs_count=7&theme=merko" />
-</div>
-
 
 ## LANGUAGES AND TOOLS:
 [![My Skills](https://skills.thijs.gg/icons?i=react,nodejs,mongodb,postgresql,styledcomponents,cpp,html,css,javascript,java,prisma,docker&theme=light)](https://skills.thijs.gg)
