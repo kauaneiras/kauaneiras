@@ -28,3 +28,6 @@
   <a href="https://www.linkedin.com/in/kauan-de-torres-eiras-9a9563171/" target="_blank"><img height="40" width="40"
       src="https://cdn-icons-png.flaticon.com/512/174/174857.png" target="_blank"></a>
   <div style="display: inline_block"><br>
+    
+    ![](./profile-3d-contrib/profile-night-rainbow.svg)
+    
