@@ -29,5 +29,6 @@
       src="https://cdn-icons-png.flaticon.com/512/174/174857.png" target="_blank"></a>
   <div style="display: inline_block"><br>
     
-   
+   [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kauaneiras&layout=compact)](https://github.com/kauaneiras/github-readme-stats)
+
     
