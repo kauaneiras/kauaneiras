@@ -4,8 +4,11 @@
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/kauaneiras/)
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kauan-de-torres-eiras-9a9563171/)
-[![Email](https://img.shields.io/badge/Outlook-darkblue?style=for-the-badge)](mailto:kauante@hotmail.com)
+[![Outlook](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:kauante@hotmail.com)
 [![Telegram badge](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/kauaneiras)
+[![Spotify](https://img.shields.io/badge/Spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/user/12173727198?si=0ca1555a79a14b93)
+[![Twitch](https://img.shields.io/badge/Twitch-%239146FF.svg?style=for-the-badge&logo=Twitch&logoColor=white)](https://www.twitch.tv/kauaneiras)
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/channel/UCTtLgcVavRMt8vKTznn_ySg)
 
 ## Sobre Mim :wave:
 
@@ -53,18 +56,12 @@ Atualmente meu foco é me especializar cada vez mais em desenvolvimento Web, por
 
 ## Tecnologias que estou estudando :books:
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat-square&logo=java&logoColor=white)
 
 ## Estatísticas :rocket:
 
 <img align="left" width="450" src="https://github-readme-stats.vercel.app/api?username=kauaneiras&show_icons=true&count_private=true&hide=stars,issues" />
 <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kauaneiras&layout=compact" />
 
-<!-- 
-  href="https://www.youtube.com/channel/UCTtLgcVavRMt8vKTznn_ySg"
-  href="https://www.twitch.tv/kauaneiras"
-  href="https://open.spotify.com/user/12173727198?si=0ca1555a79a14b93"
-  href="mailto:kauante@hotmail.com"
-  href="https://www.linkedin.com/in/kauan-de-torres-eiras-9a9563171/"
- -->
 
     
