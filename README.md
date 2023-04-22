@@ -14,7 +14,7 @@
 
 Olá! Me identifico como Kauan, tenho 23 anos e sou desenvolvedor web full stack. Faço Engenharia de Eletrônica pela Universidade de Brasília (UnB) e meu objetivo é criar soluções que melhorem o mundo com os conhecimentos aprendidos nas minhas áreas de atuação. 
 
-Sou desenvolvedor web em formação pelo Curso Técnico Integrado da Driven Education com +1200 horas e +30 projetos práticos com as principais tecnologias Front-end e Back-end do mercado: HTML5, CSS3, Javascript, Typescript, ReactJS, NodeJS, ExpressJS, MongoDb, PostgreSQL, Prisma, além da utilização de Metodologias Ágeis (Scrum), Git, Trello, Slack, Zoom, Discord, durante projetos realizados em grupo.
+Sou desenvolvedor web formado pelo Curso Técnico Integrado da Driven Education com +1200 horas e +30 projetos práticos com as principais tecnologias Front-end e Back-end do mercado: HTML5, CSS3, Javascript, Typescript, ReactJS, NodeJS, ExpressJS, MongoDb, PostgreSQL, Prisma, além da utilização de Metodologias Ágeis (Scrum), Git, Trello, Slack, Zoom, Discord, durante projetos realizados em grupo.
 
 Atualmente meu foco é me especializar cada vez mais em desenvolvimento Web, porém também tenho interesse em Segurança de Computadores, Desenvolvimento Mobile e Inteligência Artificial.
 
