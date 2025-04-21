@@ -20,15 +20,20 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          
+      - name: Navigate to portfolio directory
+        run: cd portfolio
 
       - name: Install dependencies
+        working-directory: ./portfolio
         run: npm ci
 
       - name: Build static site
+        working-directory: ./portfolio
         run: npm run build && npm run export
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out 
+          publish_dir: ./portfolio/out 
