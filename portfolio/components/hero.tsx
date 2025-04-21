@@ -3,7 +3,7 @@
 import { useRef, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Canvas, useFrame } from "@react-three/fiber"
-import { OrbitControls, Text, useGLTF, Environment } from "@react-three/drei"
+import { OrbitControls, useGLTF, Environment } from "@react-three/drei"
 import { Button } from "@/components/ui/button"
 import { ArrowDown, Github, Linkedin, Gamepad2 } from "lucide-react"
 import { useMobile } from "@/hooks/use-mobile"
@@ -20,7 +20,11 @@ function Model(props: any) {
     ref.current.position.y = (1 + Math.sin(t / 1.5)) / 5
   })
 
-  return <primitive ref={ref} object={scene} scale={1.5} {...props} />
+  return  (
+    <group position={[-1, -2, 0]}>
+      <primitive ref={ref} object={scene} scale={2.5} {...props} />
+    </group>
+  )
 }
 
 export default function Hero() {
@@ -78,12 +82,16 @@ export default function Hero() {
             >
               {t("hero.downloadCV")}
             </Button>
-            <Button size="lg" variant="outline">
-              <Github className="mr-2 h-4 w-4" /> GitHub
-            </Button>
-            <Button size="lg" variant="outline">
-              <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
-            </Button>
+            <a href="https://github.com/kauaneiras" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline">
+                <Github className="mr-2 h-4 w-4" /> GitHub
+              </Button>
+            </a>
+            <a href="https://www.linkedin.com/in/kauaneiras/" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline">
+                <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
+              </Button>
+            </a>
           </div>
         </motion.div>
 
@@ -92,16 +100,16 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="flex-1 h-[400px] lg:h-[600px] w-full max-w-[500px] transition-transform duration-200 ease-out flex items-start"
+          className="flex-1 h-[400px] lg:h-[500px] w-full max-w-[500px] transition-transform duration-200 ease-out "
           style={{ transformStyle: "preserve-3d" }}
         >
-          <Canvas camera={{ position: [0, 0, 8], fov: 50 }}>
-            <ambientLight intensity={0.5} />
+          <Canvas camera={{ position: [0, 1, 7], fov: 50 }}  >
+            <ambientLight intensity={0.9} />
             <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
             <pointLight position={[-10, -10, -10]} />
-            <Model position={[0, 0, 0]} /> 
             <Environment preset="city" />
-            <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0} />
+            <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.2} />
+            <Model position={[0, -1.5, 0]} />
           </Canvas>
         </motion.div>
       </div>

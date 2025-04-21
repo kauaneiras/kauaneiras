@@ -67,15 +67,109 @@ const translations: Record<Language, Translations> = {
     },
     skills: {
       title: "Skills & Expertise",
-      subtitle: "My technical skills and areas of expertise",
-      programming: "Programming",
-      frontend: "Frontend",
-      backend: "Backend",
-      devops: "DevOps",
-      ai: "AI",
-      languages: "Languages",
-      cloud: "Cloud",
-      soft: "Soft Skills",
+      subtitle: "Minhas habilidades técnicas e áreas de especialização",
+      programming: {
+        name: "Programação",
+        skills: {
+          name: "Programação",
+          items: [
+            { name: "JavaScript", level: "85" },
+            { name: "TypeScript", level: "75" },
+            { name: "Python", level: "70" },
+            { name: "C/C++", level: "65" },
+            { name: "Java", level: "45" },
+            { name: "Go", level: "30" },
+            { name: "assembly Risc V", level: "25" },
+          ]
+        },
+      },
+      frontend: {
+        name: "Frontend",
+        skills: {
+          name: "Frontend",
+          items: [
+            { name: "React", level: "85" },
+            { name: "HTML & CSS", level: "85" },
+            { name: "Next", level: "80" },
+            { name: "React Native", level: "70" },
+            { name: "Vue.js", level: "70" },
+            { name: "WordPress", level: "70" },
+            { name: "Figma", level: "60" },
+          ]
+        },
+      },
+      backend: {
+        name: "Backend",
+        skills: {
+          name: "Backend",
+          items: [
+            { name: "Node.js", level: "80" },
+            { name: "Express", level: "80" },
+            { name: "Nest", level: "75" },
+            { name: "Django", level: "70" },
+            { name: "Spring Boot", level: "55" },
+            { name: "SQL", level: "85" },
+            { name: "MongoDB", level: "70" },
+            { name: "Redis", level: "60" },
+          ]
+        },
+      },
+      devops: {
+        name: "DevOps",
+        skills: {
+          name: "DevOps",
+          items: [
+            { name: "Git & Gitflow", level: "90" },
+            { name: "Docker & Docker Compose", level: "80" },
+            { name: "Kubernetes", level: "55" },
+            { name: "Pipeline de Integração e Entrega (CI/CD)", level: "60" },
+            { name: "Unit Testing", level: "0" },
+            { name: "Podman", level: "70" },
+          ]
+        },
+      },
+      ai: {
+        name: "IA",
+        skills: {
+          name: "IA",
+          items: [
+            { name: "Prompt Engineering", level: "85" },
+            { name: "LLM Integration", level: "85" },
+            { name: "AI Agents", level: "60" },
+            { name: "n8n", level: "65" },
+            { name: "comfyUI", level: "45" },
+          ]
+        },
+      },
+      cloud: {
+        name: "Infraestrutura & Nuvem",
+        skills: {
+          name: "Infraestrutura & Nuvem",
+          items: [
+            { name: "OpenStack", level: "60" },
+            { name: "Virtualização", level: "60" },
+            { name: "Azure", level: "55" },
+            { name: "AWS", level: "50" },
+            { name: "Network Security", level: "45" },
+            { name: "Networking", level: "65" },
+            { name: "Terraform", level: "35" },
+          ]
+        },
+      },
+      soft: {
+        name: "Habilidades Interpessoais",
+        skills: {
+          name: "Habilidades Interpessoais",
+          items: [
+            { name: "Comunicação", level: "90" },
+            { name: "Aprendizado Rápido", level: "90" },
+            { name: "Trabalho em Equipe", level: "85" },
+            { name: "Liderança", level: "80" },
+            { name: "Resolução de Problemas", level: "90" },
+            { name: "Organização", level: "85" },
+          ]
+        },
+      },
     },
     projects: {
       title: "Projects",
@@ -200,14 +294,108 @@ const translations: Record<Language, Translations> = {
     skills: {
       title: "Habilidades & Expertise",
       subtitle: "Minhas habilidades técnicas e áreas de especialização",
-      programming: "Programação",
-      frontend: "Frontend",
-      backend: "Backend",
-      devops: "DevOps",
-      ai: "IA",
-      languages: "Idiomas",
-      cloud: "Nuvem",
-      soft: "Habilidades Interpessoais",
+      programming: {
+        name: "Programação",
+        skills: {
+          name: "Programação",
+          items: [
+            { name: "JavaScript", level: "85" },
+            { name: "TypeScript", level: "75" },
+            { name: "Python", level: "70" },
+            { name: "C/C++", level: "65" },
+            { name: "Java", level: "45" },
+            { name: "Go", level: "30" },
+            { name: "assembly Risc V", level: "25" },
+          ]
+        },
+      },
+      frontend: {
+        name: "Frontend",
+        skills: {
+          name: "Frontend",
+          items: [
+            { name: "React", level: "85" },
+            { name: "HTML & CSS", level: "85" },
+            { name: "Next", level: "80" },
+            { name: "React Native", level: "70" },
+            { name: "Vue.js", level: "70" },
+            { name: "WordPress", level: "70" },
+            { name: "Figma", level: "60" },
+          ]
+        },
+      },
+      backend: {
+        name: "Backend",
+        skills: {
+          name: "Backend",
+          items: [
+            { name: "Node.js", level: "80" },
+            { name: "Express", level: "80" },
+            { name: "Nest", level: "75" },
+            { name: "Django", level: "70" },
+            { name: "Spring Boot", level: "55" },
+            { name: "SQL", level: "85" },
+            { name: "MongoDB", level: "70" },
+            { name: "Redis", level: "60" },
+          ]
+        },
+      },
+      devops: {
+        name: "DevOps",
+        skills: {
+          name: "DevOps",
+          items: [
+            { name: "Git & Gitflow", level: "90" },
+            { name: "Docker & Docker Compose", level: "80" },
+            { name: "Kubernetes", level: "55" },
+            { name: "Pipeline de Integração e Entrega (CI/CD)", level: "60" },
+            { name: "Unit Testing", level: "0" },
+            { name: "Podman", level: "70" },
+          ]
+        },
+      },
+      ai: {
+        name: "IA",
+        skills: {
+          name: "IA",
+          items: [
+            { name: "Prompt Engineering", level: "85" },
+            { name: "LLM Integration", level: "85" },
+            { name: "AI Agents", level: "60" },
+            { name: "n8n", level: "65" },
+            { name: "comfyUI", level: "45" },
+          ]
+        },
+      },
+      cloud: {
+        name: "Nuvem",
+        skills: {
+          name: "Nuvem",
+          items: [
+            { name: "OpenStack", level: "60" },
+            { name: "Virtualização", level: "60" },
+            { name: "Azure", level: "55" },
+            { name: "AWS", level: "50" },
+            { name: "Network Security", level: "45" },
+            { name: "Networking", level: "65" },
+            { name: "Terraform", level: "35" },
+          ]
+        },
+      },
+      soft: {
+        name: "Habilidades Interpessoais",
+        skills: {
+          name: "Habilidades Interpessoais",
+          items: [
+            { name: "Comunicação", level: "90" },
+            { name: "Aprendizado Rápido", level: "90" },
+            { name: "Trabalho em Equipe", level: "85" },
+            { name: "Liderança", level: "80" },
+            { name: "Resolução de Problemas", level: "90" },
+            { name: "Organização", level: "85" },
+          ]
+        },
+      },
     },
     projects: {
       title: "Projetos",
@@ -308,7 +496,7 @@ const translations: Record<Language, Translations> = {
       greeting: "Hallo, ich bin",
       role: "Full-Stack-Entwickler",
       description:
-        "Spezialisiert auf moderne Webtechnologien, KI-Integration und Cloud-Infrastruktur. Entwicklung innovativer Lösungen mit React, Node.js und Django.",
+        "Spezialisiert auf moderne Webtechnologien, KI-Integration und Cloud-Infrastruktur. Entwicklung innovativer Lösungen mit React, Node.js, und Django.",
       downloadCV: "Lebenslauf herunterladen",
     },
     about: {
@@ -332,14 +520,108 @@ const translations: Record<Language, Translations> = {
     skills: {
       title: "Fähigkeiten & Expertise",
       subtitle: "Meine technischen Fähigkeiten und Fachgebiete",
-      programming: "Programmierung",
-      frontend: "Frontend",
-      backend: "Backend",
-      devops: "DevOps",
-      ai: "KI",
-      languages: "Sprachen",
-      cloud: "Cloud",
-      soft: "Soft Skills",
+      programming: {
+        name: "Programmierung",
+        skills: {
+          name: "Programmierung",
+          items: [
+            { name: "JavaScript", level: "85" },
+            { name: "TypeScript", level: "75" },
+            { name: "Python", level: "70" },
+            { name: "C/C++", level: "65" },
+            { name: "Java", level: "45" },
+            { name: "Go", level: "30" },
+            { name: "assembly Risc V", level: "25" },
+          ]
+        },
+      },
+      frontend: {
+        name: "Frontend",
+        skills: {
+          name: "Frontend",
+          items: [
+            { name: "React", level: "85" },
+            { name: "HTML & CSS", level: "85" },
+            { name: "Next", level: "80" },
+            { name: "React Native", level: "70" },
+            { name: "Vue.js", level: "70" },
+            { name: "WordPress", level: "70" },
+            { name: "Figma", level: "60" },
+          ]
+        },
+      },
+      backend: {
+        name: "Backend",
+        skills: {
+          name: "Backend",
+          items: [
+            { name: "Node.js", level: "80" },
+            { name: "Express", level: "80" },
+            { name: "Nest", level: "75" },
+            { name: "Django", level: "70" },
+            { name: "Spring Boot", level: "55" },
+            { name: "SQL", level: "85" },
+            { name: "MongoDB", level: "70" },
+            { name: "Redis", level: "60" },
+          ]
+        },
+      },
+      devops: {
+        name: "DevOps",
+        skills: {
+          name: "DevOps",
+          items: [
+            { name: "Git & Gitflow", level: "90" },
+            { name: "Docker & Docker Compose", level: "80" },
+            { name: "Kubernetes", level: "55" },
+            { name: "Pipeline de Integração e Entrega (CI/CD)", level: "60" },
+            { name: "Unit Testing", level: "0" },
+            { name: "Podman", level: "70" },
+          ]
+        },
+      },
+      ai: {
+        name: "KI",
+        skills: {
+          name: "KI",
+          items: [
+            { name: "Prompt Engineering", level: "85" },
+            { name: "LLM Integration", level: "85" },
+            { name: "AI Agents", level: "60" },
+            { name: "n8n", level: "65" },
+            { name: "comfyUI", level: "45" },
+          ]
+        },
+      },
+      cloud: {
+        name: "Cloud",
+        skills: {
+          name: "Cloud",
+          items: [
+            { name: "OpenStack", level: "60" },
+            { name: "Virtualização", level: "60" },
+            { name: "Azure", level: "55" },
+            { name: "AWS", level: "50" },
+            { name: "Network Security", level: "45" },
+            { name: "Networking", level: "65" },
+            { name: "Terraform", level: "35" },
+          ]
+        },
+      },
+      soft: {
+        name: "Soft Skills",
+        skills: {
+          name: "Soft Skills",
+          items: [
+            { name: "Comunicação", level: "90" },
+            { name: "Aprendizado Rápido", level: "90" },
+            { name: "Trabalho em Equipe", level: "85" },
+            { name: "Liderança", level: "80" },
+            { name: "Resolução de Problemas", level: "90" },
+            { name: "Organização", level: "85" },
+          ]
+        },
+      },
     },
     projects: {
       title: "Projekte",
@@ -463,14 +745,108 @@ const translations: Record<Language, Translations> = {
     skills: {
       title: "Kapabloj & Spertizo",
       subtitle: "Miaj teknikaj kapabloj kaj spertizaj kampoj",
-      programming: "Programado",
-      frontend: "Frontendo",
-      backend: "Malantaŭendo",
-      devops: "DevOps",
-      ai: "AI",
-      languages: "Lingvoj",
-      cloud: "Nubo",
-      soft: "Molaj Kapabloj",
+      programming: {
+        name: "Programado",
+        skills: {
+          name: "Programado",
+          items: [
+            { name: "JavaScript", level: "85" },
+            { name: "TypeScript", level: "75" },
+            { name: "Python", level: "70" },
+            { name: "C/C++", level: "65" },
+            { name: "Java", level: "45" },
+            { name: "Go", level: "30" },
+            { name: "assembly Risc V", level: "25" },
+          ]
+        },
+      },
+      frontend: {
+        name: "Frontendo",
+        skills: {
+          name: "Frontendo",
+          items: [
+            { name: "React", level: "85" },
+            { name: "HTML & CSS", level: "85" },
+            { name: "Next", level: "80" },
+            { name: "React Native", level: "70" },
+            { name: "Vue.js", level: "70" },
+            { name: "WordPress", level: "70" },
+            { name: "Figma", level: "60" },
+          ]
+        },
+      },
+      backend: {
+        name: "Malantaŭendo",
+        skills: {
+          name: "Malantaŭendo",
+          items: [
+            { name: "Node.js", level: "80" },
+            { name: "Express", level: "80" },
+            { name: "Nest", level: "75" },
+            { name: "Django", level: "70" },
+            { name: "Spring Boot", level: "55" },
+            { name: "SQL", level: "85" },
+            { name: "MongoDB", level: "70" },
+            { name: "Redis", level: "60" },
+          ]
+        },
+      },
+      devops: {
+        name: "DevOps",
+        skills: {
+          name: "DevOps",
+          items: [
+            { name: "Git & Gitflow", level: "90" },
+            { name: "Docker & Docker Compose", level: "80" },
+            { name: "Kubernetes", level: "55" },
+            { name: "Pipeline de Integração e Entrega (CI/CD)", level: "60" },
+            { name: "Unit Testing", level: "0" },
+            { name: "Podman", level: "70" },
+          ]
+        },
+      },
+      ai: {
+        name: "AI",
+        skills: {
+          name: "AI",
+          items: [
+            { name: "Prompt Engineering", level: "85" },
+            { name: "LLM Integration", level: "85" },
+            { name: "AI Agents", level: "60" },
+            { name: "n8n", level: "65" },
+            { name: "comfyUI", level: "45" },
+          ]
+        },
+      },
+      cloud: {
+        name: "Nubo",
+        skills: {
+          name: "Nubo",
+          items: [
+            { name: "OpenStack", level: "60" },
+            { name: "Virtualização", level: "60" },
+            { name: "Azure", level: "55" },
+            { name: "AWS", level: "50" },
+            { name: "Network Security", level: "45" },
+            { name: "Networking", level: "65" },
+            { name: "Terraform", level: "35" },
+          ]
+        },
+      },
+      soft: {
+        name: "Molaj Kapabloj",
+        skills: {
+          name: "Molaj Kapabloj",
+          items: [
+            { name: "Comunicação", level: "90" },
+            { name: "Aprendizado Rápido", level: "90" },
+            { name: "Trabalho em Equipe", level: "85" },
+            { name: "Liderança", level: "80" },
+            { name: "Resolução de Problemas", level: "90" },
+            { name: "Organização", level: "85" },
+          ]
+        },
+      },
     },
     projects: {
       title: "Projektoj",

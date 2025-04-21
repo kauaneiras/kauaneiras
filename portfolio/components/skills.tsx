@@ -5,107 +5,27 @@ import { motion } from "framer-motion"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Progress } from "@/components/ui/progress"
 import { Code, Layout, Server, GitBranch, Languages, MessageSquare, Network, Brain } from "lucide-react"
+import { useTranslation } from "@/lib/i18n"
+import skillsData from "@/lib/i18n/skills"
 
 export default function Skills() {
   const [activeTab, setActiveTab] = useState("programming")
+  const { t, language } = useTranslation()
 
-  const skillCategories = [
-    {
-      id: "programming",
-      name: "Programming",
-      icon: <Code className="h-5 w-5" />,
-      skills: [
-        { name: "JavaScript", level: 90 },
-        { name: "TypeScript", level: 85 },
-        { name: "Python", level: 80 },
-        { name: "Java", level: 70 },
-        { name: "C/C++", level: 75 },
-      ],
-    },
-    {
-      id: "frontend",
-      name: "Frontend",
-      icon: <Layout className="h-5 w-5" />,
-      skills: [
-        { name: "React", level: 90 },
-        { name: "React Native", level: 85 },
-        { name: "HTML & CSS", level: 95 },
-        { name: "Vue.js", level: 70 },
-        { name: "WordPress", level: 75 },
-      ],
-    },
-    {
-      id: "backend",
-      name: "Backend",
-      icon: <Server className="h-5 w-5" />,
-      skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Django", level: 80 },
-        { name: "Spring Boot", level: 65 },
-        { name: "SQL", level: 85 },
-        { name: "MongoDB", level: 75 },
-      ],
-    },
-    {
-      id: "devops",
-      name: "DevOps",
-      icon: <GitBranch className="h-5 w-5" />,
-      skills: [
-        { name: "Gitflow", level: 85 },
-        { name: "Docker", level: 80 },
-        { name: "Kubernetes", level: 65 },
-        { name: "CI/CD Github", level: 75 },
-        { name: "Testes Unitários", level: 80 },
-      ],
-    },
-    {
-      id: "ai",
-      name: "AI",
-      icon: <Brain className="h-5 w-5" />,
-      skills: [
-        { name: "Prompt Engineering", level: 90 },
-        { name: "LLM Integration", level: 85 },
-        { name: "NLP", level: 75 },
-        { name: "Machine Learning", level: 70 },
-        { name: "AI Agents", level: 80 },
-      ],
-    },
-    {
-      id: "languages",
-      name: "Languages",
-      icon: <Languages className="h-5 w-5" />,
-      skills: [
-        { name: "Portuguese", level: 100 },
-        { name: "English", level: 75 },
-        { name: "German", level: 30 },
-        { name: "Esperanto", level: 35 },
-      ],
-    },
-    {
-      id: "cloud",
-      name: "Cloud",
-      icon: <Network className="h-5 w-5" />,
-      skills: [
-        { name: "OpenStack", level: 80 },
-        { name: "AWS", level: 70 },
-        { name: "Azure", level: 65 },
-        { name: "Virtualization", level: 85 },
-        { name: "Network Security", level: 75 },
-      ],
-    },
-    {
-      id: "soft",
-      name: "Soft Skills",
-      icon: <MessageSquare className="h-5 w-5" />,
-      skills: [
-        { name: "Communication", level: 90 },
-        { name: "Leadership", level: 85 },
-        { name: "Fast Learning", level: 95 },
-        { name: "Problem Solving", level: 90 },
-        { name: "Teamwork", level: 85 },
-      ],
-    },
-  ]
+  const supportedLang = (["en", "pt"].includes(language) ? language : "en") as "en" | "pt"
+  const categories = Object.entries(skillsData[supportedLang].categories).map(([id, cat]) => ({
+    id,
+    name: cat.name,
+    icon:
+      id === "programming" ? <Code className="h-5 w-5" /> :
+      id === "frontend" ? <Layout className="h-5 w-5" /> :
+      id === "backend" ? <Server className="h-5 w-5" /> :
+      id === "devops" ? <GitBranch className="h-5 w-5" /> :
+      id === "ai" ? <Brain className="h-5 w-5" /> :
+      id === "cloud" ? <Network className="h-5 w-5" /> :
+      id === "soft" ? <MessageSquare className="h-5 w-5" /> : null,
+    skills: cat.skills,
+  }))
 
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
@@ -129,48 +49,43 @@ export default function Skills() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Skills & Expertise</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("skills.title")}</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto mb-8"></div>
-          <p className="text-lg max-w-3xl mx-auto text-muted-foreground">My technical skills and areas of expertise</p>
+          <p className="text-lg max-w-3xl mx-auto text-muted-foreground">{t("skills.subtitle")}</p>
         </motion.div>
 
         <Tabs defaultValue="programming" value={activeTab} onValueChange={setActiveTab} className="w-full">
           <div className="flex justify-center mb-8">
-            <TabsList className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-2">
-              {skillCategories.map((category) => (
-                <TabsTrigger
-                  key={category.id}
-                  value={category.id}
-                  className="flex items-center gap-2 data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-500 data-[state=active]:to-cyan-400 data-[state=active]:text-white"
+            <TabsList className="grid grid-flow-col auto-cols-[minmax(120px,1fr)] gap-2 w-full">
+              {categories.map(cat => (
+                <TabsTrigger 
+                  key={cat.id} 
+                  value={cat.id} 
+                  className="whitespace-nowrap px-4 py-2 text-center"
                 >
-                  {category.icon}
-                  <span className="hidden md:inline">{category.name}</span>
+                  {cat.icon}
+                  <span className="ml-2">{cat.name}</span>
                 </TabsTrigger>
               ))}
             </TabsList>
           </div>
-
-          {skillCategories.map((category) => (
-            <TabsContent key={category.id} value={category.id} className="mt-0">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {category.skills.map((skill, index) => (
+          {categories.map((cat, idx) => (
+            <TabsContent key={cat.id} value={cat.id}>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {Array.isArray(cat.skills) && cat.skills.map((skill: any, i: number) => (
                   <motion.div
                     key={skill.name}
+                    custom={i}
                     initial="hidden"
-                    animate={activeTab === category.id ? "visible" : "hidden"}
-                    custom={index}
+                    whileInView="visible"
+                    viewport={{ once: true }}
                     variants={fadeIn}
-                    className="space-y-2"
                   >
-                    <div className="flex justify-between items-center">
-                      <h3 className="font-medium">{skill.name}</h3>
-                      <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="font-medium text-foreground">{skill.name}</span>
+                      <span className="text-sm text-muted-foreground font-semibold">{skill.level}%</span>
                     </div>
-                    <Progress
-                      value={skill.level}
-                      className="h-2 bg-muted"
-                      indicatorClassName="bg-gradient-to-r from-blue-500 to-cyan-400"
-                    />
+                    <Progress value={parseInt(skill.level)} />
                   </motion.div>
                 ))}
               </div>

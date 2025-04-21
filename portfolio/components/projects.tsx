@@ -7,66 +7,67 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github, Filter } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { useTranslation } from "@/lib/i18n"
 
 export default function Projects() {
   const [filter, setFilter] = useState<string | null>(null)
+  const { t } = useTranslation()
 
-  // Sample projects based on the skills mentioned in the resume
-  const projects = [
+  // Define projects directly instead of trying to get from translations
+  const projectsData = [
     {
-      title: "AI Document Analyzer",
-      description:
-        "An AI-powered tool that analyzes technical documents and extracts key information using NLP techniques.",
-      image: "/placeholder.svg?height=400&width=600",
+      title: t("projects.items.0.title"),
+      description: t("projects.items.0.description"),
       tags: ["AI", "NLP", "Python", "Django", "React"],
+      image: "/placeholder.svg?height=400&width=600",
       demoUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "Cloud Infrastructure Dashboard",
-      description: "A dashboard for monitoring and managing cloud infrastructure with real-time analytics.",
-      image: "/placeholder.svg?height=400&width=600",
+      title: t("projects.items.1.title"),
+      description: t("projects.items.1.description"),
       tags: ["React", "Node.js", "OpenStack", "Cloud", "Docker"],
+      image: "/placeholder.svg?height=400&width=600",
       demoUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "Mobile Learning Platform",
-      description: "A cross-platform mobile app for interactive learning with personalized content.",
-      image: "/placeholder.svg?height=400&width=600",
+      title: t("projects.items.2.title"),
+      description: t("projects.items.2.description"),
       tags: ["React Native", "Node.js", "MongoDB", "AI"],
+      image: "/placeholder.svg?height=400&width=600",
       demoUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "API Gateway Service",
-      description: "A scalable API gateway service with authentication, rate limiting, and request routing.",
-      image: "/placeholder.svg?height=400&width=600",
+      title: t("projects.items.3.title"),
+      description: t("projects.items.3.description"),
       tags: ["Express.js", "Node.js", "Docker", "Kubernetes"],
+      image: "/placeholder.svg?height=400&width=600",
       demoUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "Smart Home Automation",
-      description: "An IoT-based smart home automation system with voice control and mobile app.",
-      image: "/placeholder.svg?height=400&width=600",
+      title: t("projects.items.4.title"),
+      description: t("projects.items.4.description"),
       tags: ["IoT", "React", "Node.js", "C++", "AI"],
+      image: "/placeholder.svg?height=400&width=600",
       demoUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "E-commerce Platform",
-      description: "A full-featured e-commerce platform with payment integration and inventory management.",
-      image: "/placeholder.svg?height=400&width=600",
+      title: t("projects.items.5.title"),
+      description: t("projects.items.5.description"),
       tags: ["React", "Node.js", "SQL", "Redis"],
+      image: "/placeholder.svg?height=400&width=600",
       demoUrl: "#",
       githubUrl: "#",
     },
   ]
 
-  const allTags = Array.from(new Set(projects.flatMap((project) => project.tags)))
+  const allTags = Array.from(new Set(projectsData.flatMap((project) => project.tags)))
 
-  const filteredProjects = filter ? projects.filter((project) => project.tags.includes(filter)) : projects
+  const filteredProjects = filter ? projectsData.filter((project) => project.tags.includes(filter)) : projectsData
 
   return (
     <section id="projects" className="py-20 bg-muted/30">
@@ -78,11 +79,9 @@ export default function Projects() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("projects.title")}</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto mb-8"></div>
-          <p className="text-lg max-w-3xl mx-auto text-muted-foreground">
-            A selection of my recent work and personal projects
-          </p>
+          <p className="text-lg max-w-3xl mx-auto text-muted-foreground">{t("projects.subtitle")}</p>
         </motion.div>
 
         <div className="flex justify-center mb-8">
@@ -90,11 +89,11 @@ export default function Projects() {
             <DropdownMenuTrigger asChild>
               <Button variant="outline" className="flex items-center gap-2">
                 <Filter className="h-4 w-4" />
-                {filter ? `Filter: ${filter}` : "Filter Projects"}
+                {filter ? `${t("projects.filterProjects")}: ${filter}` : t("projects.filterProjects")}
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="center">
-              <DropdownMenuItem onClick={() => setFilter(null)}>All Projects</DropdownMenuItem>
+              <DropdownMenuItem onClick={() => setFilter(null)}>{t("projects.allProjects")}</DropdownMenuItem>
               {allTags.map((tag) => (
                 <DropdownMenuItem key={tag} onClick={() => setFilter(tag)}>
                   {tag}
@@ -138,10 +137,10 @@ export default function Projects() {
                     size="sm"
                     className="flex-1 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600"
                   >
-                    <ExternalLink className="mr-2 h-4 w-4" /> Demo
+                    <ExternalLink className="mr-2 h-4 w-4" /> {t("projects.demo")}
                   </Button>
                   <Button variant="outline" size="sm" className="flex-1">
-                    <Github className="mr-2 h-4 w-4" /> Code
+                    <Github className="mr-2 h-4 w-4" /> {t("projects.code")}
                   </Button>
                 </CardFooter>
               </Card>

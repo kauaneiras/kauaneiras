@@ -1,0 +1,43 @@
+const about = {
+  en: {
+    title: "About Me",
+    subtitle: "Full Stack Developer with expertise in modern web technologies, AI integration, and cloud infrastructure.",
+    paragraph1: "I'm a passionate Full Stack Developer with a strong background in software engineering and a focus on creating innovative solutions. Currently pursuing a degree in Software Engineering at the University of Brasília, I combine academic knowledge with practical experience in the industry.",
+    paragraph2: "My expertise spans across frontend and backend development, with a particular interest in AI technologies, natural language processing, and cloud infrastructure. I enjoy building scalable applications that solve real-world problems.",
+    paragraph3: "When I'm not coding, I'm expanding my knowledge in new technologies or languages - both programming and human ones!",
+    phone: "Phone",
+    email: "Email",
+    location: "Location",
+  },
+  pt: {
+    title: "Sobre Mim",
+    subtitle: "Desenvolvedor Full Stack com expertise em tecnologias web modernas, integração de IA e infraestrutura em nuvem.",
+    paragraph1: "Sou um Desenvolvedor Full Stack apaixonado com forte experiência em engenharia de software e foco na criação de soluções inovadoras. Atualmente cursando Engenharia de Software na Universidade de Brasília, combino conhecimento acadêmico com experiência prática na indústria.",
+    paragraph2: "Minha expertise abrange desenvolvimento frontend e backend, com interesse particular em tecnologias de IA, processamento de linguagem natural e infraestrutura em nuvem. Gosto de construir aplicações escaláveis que resolvem problemas do mundo real.",
+    paragraph3: "Quando não estou codificando, estou expandindo meu conhecimento em novas tecnologias ou idiomas - tanto de programação quanto humanos!",
+    phone: "Telefone",
+    email: "Email",
+    location: "Localização",
+  },
+  de: {
+    title: "Über Mich",
+    subtitle: "Full-Stack-Entwickler mit Expertise in modernen Webtechnologien, KI-Integration und Cloud-Infrastruktur.",
+    paragraph1: "Ich bin ein leidenschaftlicher Full-Stack-Entwickler mit einem starken Hintergrund in Softwareentwicklung und einem Fokus auf die Erstellung innovativer Lösungen. Derzeit studiere ich Softwareentwicklung an der Universität von Brasília und kombiniere akademisches Wissen mit praktischer Erfahrung in der Industrie.",
+    paragraph2: "Meine Expertise erstreckt sich über Frontend- und Backend-Entwicklung, mit besonderem Interesse an KI-Technologien, natürlicher Sprachverarbeitung und Cloud-Infrastruktur. Ich entwickle gerne skalierbare Anwendungen, die reale Probleme lösen.",
+    paragraph3: "Wenn ich nicht programmiere, erweitere ich mein Wissen in neuen Technologien oder Sprachen - sowohl Programmier- als auch menschliche Sprachen!",
+    phone: "Telefon",
+    email: "E-Mail",
+    location: "Standort",
+  },
+  eo: {
+    title: "Pri Mi",
+    subtitle: "Tutpila Programisto kun sperto pri modernaj retteknologioj, AI-integriĝo, kaj nuba infrastrukturo.",
+    paragraph1: "Mi estas pasia Tutpila Programisto kun forta fono en programara inĝenierado kaj fokuso pri kreado de novigaj solvoj. Nuntempe studante Programaran Inĝenieradon ĉe la Universitato de Braziljo, mi kombinas akademian scion kun praktika sperto en la industrio.",
+    paragraph2: "Mia sperto etendiĝas tra frontenda kaj malantaŭenda programado, kun aparta intereso pri AI-teknologioj, natura lingva procezado, kaj nuba infrastrukturo. Mi ĝuas konstrui skaleblan aplikaĵojn kiuj solvas realajn problemojn.",
+    paragraph3: "Kiam mi ne programas, mi plivastigas mian scion pri novaj teknologioj aŭ lingvoj - ambaŭ programaj kaj homaj!",
+    phone: "Telefono",
+    email: "Retpoŝto",
+    location: "Loko",
+  },
+}
+export default about; 

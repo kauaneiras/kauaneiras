@@ -2,9 +2,11 @@
 
 import { motion } from "framer-motion"
 import { Github, Linkedin, Mail, Twitter } from "lucide-react"
+import { useTranslation } from "@/lib/i18n"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const { t } = useTranslation()
 
   const socialLinks = [
     { icon: <Github className="h-5 w-5" />, href: "#", label: "GitHub" },
@@ -57,8 +59,10 @@ export default function Footer() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-center text-muted-foreground"
           >
-            <p>&copy; {currentYear} Kauan Eiras. All rights reserved.</p>
-            <p className="mt-1 text-sm">Full Stack Developer | AI Specialist</p>
+            <p>
+              &copy; {currentYear} Kauan Eiras. {t("footer.copyright")}
+            </p>
+            <p className="mt-1 text-sm">{t("footer.role")}</p>
           </motion.div>
         </div>
       </div>

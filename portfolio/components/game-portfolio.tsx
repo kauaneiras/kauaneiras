@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Navbar from "@/components/navbar"
 import Hero from "@/components/hero"
 import About from "@/components/about"
 import Experience from "@/components/experience"
@@ -99,7 +98,6 @@ export default function GamePortfolio() {
         transition={{ duration: 0.5 }}
         className="bg-background dark:bg-background"
       >
-        <Navbar />
         <Hero />
         <About />
         <Experience />
