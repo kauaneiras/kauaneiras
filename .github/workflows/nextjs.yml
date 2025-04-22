@@ -74,7 +74,15 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         working-directory: ./portfolio
-        run: ${{ steps.detect-package-manager.outputs.runner }} ${{ steps.detect-package-manager.outputs.command }}
+        run: |
+          if [ "${{ steps.detect-package-manager.outputs.manager }}" = "npm" ]; then
+            npm install
+          elif [ "${{ steps.detect-package-manager.outputs.manager }}" = "yarn" ]; then
+            yarn install
+          else
+            echo "Unsupported package manager."
+            exit 1
+          fi
       - name: Build with Next.js
         working-directory: ./portfolio
         run: npm run build
