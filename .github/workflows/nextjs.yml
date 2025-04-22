@@ -76,7 +76,7 @@ jobs:
         working-directory: ./portfolio
         run: |
           if [ "${{ steps.detect-package-manager.outputs.manager }}" = "npm" ]; then
-            npm install
+            npm install --legacy-peer-deps
           elif [ "${{ steps.detect-package-manager.outputs.manager }}" = "yarn" ]; then
             yarn install
           else
