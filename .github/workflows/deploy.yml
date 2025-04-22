@@ -30,7 +30,7 @@ jobs:
 
       - name: Build static site
         working-directory: ./portfolio
-        run: npm run build && npm run export
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
