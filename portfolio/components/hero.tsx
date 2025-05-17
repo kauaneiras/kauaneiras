@@ -7,7 +7,7 @@ import { OrbitControls, useGLTF, Environment } from "@react-three/drei"
 import { Button } from "@/components/ui/button"
 import { ArrowDown, Github, Linkedin, Gamepad2 } from "lucide-react"
 import { useMobile } from "@/hooks/use-mobile"
-import { useTranslation } from "@/lib/i18n"
+import { useTranslation } from "@/lib/i18n/i18n"
 import type * as THREE from "three"
 
 function Model(props: any) {

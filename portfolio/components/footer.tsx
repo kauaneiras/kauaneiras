@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Github, Linkedin, Mail, Twitter } from "lucide-react"
-import { useTranslation } from "@/lib/i18n"
+import { useTranslation } from "@/lib/i18n/i18n"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()

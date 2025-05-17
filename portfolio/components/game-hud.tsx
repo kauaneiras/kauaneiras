@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { Trophy, Star, BarChart3, ChevronDown } from "lucide-react"
 import { ModeToggle } from "./mode-toggle"
 import LanguageSelector from "./language-selector"
-import { useTranslation } from "@/lib/i18n"
+import { useTranslation } from "@/lib/i18n/i18n"
 import { useState } from "react"
 
 interface GameHUDProps {

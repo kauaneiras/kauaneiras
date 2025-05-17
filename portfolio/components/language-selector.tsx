@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Globe } from "lucide-react"
-import { useTranslation, type Language } from "@/lib/i18n"
+import { useTranslation, type Language } from "@/lib/i18n/i18n"
 
 export default function LanguageSelector() {
   const { language, setLanguage } = useTranslation()

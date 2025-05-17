@@ -7,7 +7,7 @@ import { Play, Volume2, VolumeX, Moon, Sun, ChevronDown } from "lucide-react"
 import { ModeToggle } from "./mode-toggle"
 import LanguageSelector from "./language-selector"
 import { useTheme } from "next-themes"
-import { useTranslation } from "@/lib/i18n"
+import { useTranslation } from "@/lib/i18n/i18n"
 
 interface StartScreenProps {
   onStart: () => void

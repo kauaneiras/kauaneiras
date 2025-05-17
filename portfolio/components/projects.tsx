@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github, Filter } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import { useTranslation } from "@/lib/i18n"
+import { useTranslation } from "@/lib/i18n/i18n"
 import projectsData from "@/lib/i18n/projects"
 
 export default function Projects() {
@@ -150,8 +150,8 @@ export default function Projects() {
                           size="sm"
                           className="flex-1 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600"
                         >
-                          <a href={project.sobreUrl} target="_blank" rel="noopener noreferrer">
-                            {language === "pt" ? "Sobre" : language === "de" ? "Über" : language === "eo" ? "Pri" : "About"}
+                          <a href={project.playstoreUrl} target="_blank" rel="noopener noreferrer">
+                            {language === "pt" ? "Acessar" : language === "de" ? "Zugriff" : language === "eo" ? "Aliri" : "Access"}
                           </a>
                         </Button>
                         <Button
@@ -160,8 +160,8 @@ export default function Projects() {
                           size="sm"
                           className="flex-1"
                         >
-                          <a href={project.playstoreUrl} target="_blank" rel="noopener noreferrer">
-                            Playstore
+                          <a href={project.sobreUrl} target="_blank" rel="noopener noreferrer">
+                            {language === "pt" ? "Repositório" : language === "de" ? "Repository" : language === "eo" ? "Deponejo" : "Repository"}
                           </a>
                         </Button>
                       </>

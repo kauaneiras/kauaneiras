@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { X, Trophy, Volume2, VolumeX, Home, Moon, Sun } from "lucide-react"
 import { useState } from "react"
 import { useTheme } from "next-themes"
-import { useTranslation } from "@/lib/i18n"
+import { useTranslation } from "@/lib/i18n/i18n"
 
 interface GameMenuProps {
   onClose: () => void

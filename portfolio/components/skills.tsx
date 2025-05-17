@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Progress } from "@/components/ui/progress"
 import { Code, Layout, Server, GitBranch, Languages, MessageSquare, Network, Brain } from "lucide-react"
-import { useTranslation } from "@/lib/i18n"
+import { useTranslation } from "@/lib/i18n/i18n"
 import skillsData from "@/lib/i18n/skills"
 
 export default function Skills() {

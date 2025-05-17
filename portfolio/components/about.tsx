@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Phone, Mail, MapPin } from "lucide-react"
-import { useTranslation } from "@/lib/i18n"
+import { useTranslation } from "@/lib/i18n/i18n"
 import aboutData from "@/lib/i18n/about"
 
 export default function About() {
