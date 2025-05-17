@@ -76,12 +76,14 @@ export default function Hero() {
           <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-muted-foreground">{t("hero.role")}</h2>
           <p className="text-lg mb-8 max-w-xl">{t("hero.description")}</p>
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600"
-            >
-              {t("hero.downloadCV")}
-            </Button>
+            <a href="/documents/Kauan de Torres Eiras.pdf" target="_blank" rel="noopener noreferrer" download>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600"
+              >
+                {t("hero.downloadCV")}
+              </Button>
+            </a>
             <a href="https://github.com/kauaneiras" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline">
                 <Github className="mr-2 h-4 w-4" /> GitHub
